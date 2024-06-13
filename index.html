@@ -12,9 +12,9 @@
     <script>
 
         const secenekler = {
-            TAS: "taş",
-            KAGIT: "kağıt",
-            MAKAS: "makas"
+            TAS: "t",
+            KAGIT: "k",
+            MAKAS: "m"
         }
 
         const sonuclar = {
@@ -52,7 +52,7 @@
 
             while(true) {
                 if(oyuncuSkoru === 3 || bilgisayarSkoru === 3) break
-                const oyuncuSecimi = prompt("Taş, Kağıt, Makas ?").toLowerCase()
+                const oyuncuSecimi = prompt("Taş, Kağıt, Makas ? ( t - k - m)").toLowerCase()
                 const bilgisayarSecimi = bilgisayarSeciminiOlustur()
                 const turSonucu = TuruOyna(oyuncuSecimi, bilgisayarSecimi)
                 if(turSonucu === sonuclar.KAZANDIN) oyuncuSkoru++
